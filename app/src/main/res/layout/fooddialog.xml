@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id = "@+id/viewfoodtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "eat number"/>
+    <EditText
+        android:id="@+id/foodnum"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="please enter the number"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/eat_message"
+        android:layout_below="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+    <Button
+        android:id = "@+id/submit_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/eat_message"
+        android:layout_marginLeft="90dp"
+        android:text = "submit"/>
+</RelativeLayout>

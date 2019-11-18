@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_marginTop="50dp"
+        android:id="@+id/piechart"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="5dp"
+        />
+
+    <EditText
+        android:id="@+id/PiechartDate"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp"
+        android:hint="Start Date" />
+    <Button
+        android:id="@+id/pieButton"
+        android:layout_below="@+id/PiechartDate"
+        android:layout_toRightOf="@+id/barButton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Piechart"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="50dp"
+        android:id="@+id/barchart"
+        android:layout_below="@+id/pieButton"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="5dp"
+        />
+    <EditText
+        android:id="@+id/FromDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barchart"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:focusable="false"
+        android:hint="Start Date" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barchart"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/FromDate"
+        android:focusable="false"
+        android:hint="end date" />
+    <Button
+        android:id="@+id/barButton"
+        android:layout_below="@+id/endDate"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Barchart"
+        />
+
+
+
+
+</RelativeLayout>

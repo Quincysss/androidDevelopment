@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+    <TextView
+        android:id="@+id/setCalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_step"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_setCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setCalView"
+        android:text="Show Goal Calorie" />
+
+    <TextView
+        android:id="@+id/calConsumView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_setCal"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_calConsum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calConsumView"
+        android:text="Show Calorie Consume" />
+
+    <TextView
+        android:id="@+id/showtotalstep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_calConsum"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_totalstep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showtotalstep"
+        android:text="Show Total Step" />
+    <TextView
+        android:id="@+id/showburncalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_totalstep"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_burncarlorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showburncalorie"
+        android:text="Show Burn Calorie" />
+    <TextView
+        android:id="@+id/showpostserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_burncarlorie"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_postserver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showpostserver"
+        android:text="Post Server" />
+</RelativeLayout>

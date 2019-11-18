@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+    <EditText
+        android:id="@+id/editStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/viewStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStep"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewStep"
+        android:text="Set Steps"/>
+
+    <TextView
+        android:id="@+id/upDatestep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_step"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_upDatestep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upDatestep"
+        android:text="Update Steps!" />
+
+
+    <ListView
+        android:id="@+id/allStepView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_allStep"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_allStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_upDatestep"
+        android:text="Show total Step " />
+
+
+</RelativeLayout>
